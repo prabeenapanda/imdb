@@ -16,7 +16,7 @@ class MovieSerializer(serializers.ModelSerializer):
 
 
 class CastSerializer(serializers.ModelSerializer):
-    movies = MovieSerializer(read_only=True,many=True)
+    #movies = MovieSerializer(read_only=True)
 
     class Meta:
         model = Cast
